@@ -8,16 +8,19 @@ coreapi==2.3.3
 coreschema==0.0.4
 cryptography==37.0.4
 defusedxml==0.7.1
+dj-database-url==1.0.0
 Django==4.0.6
 django-allauth==0.51.0
 django-cors-headers==3.13.0
 django-environ==0.9.0
 django-filter==22.1
+django-on-heroku==1.1.2
 django-rest-auth==0.9.5
 django-templated-mail==1.1.1
 djangorestframework==3.13.1
 djangorestframework-simplejwt==4.8.0
 djoser==2.1.0
+gunicorn==20.1.0
 idna==3.3
 importlib-metadata==4.12.0
 itypes==1.2.0
@@ -41,4 +44,5 @@ social-auth-core==4.3.0
 sqlparse==0.4.2
 uritemplate==4.1.1
 urllib3==1.26.10
+whitenoise==6.2.0
 zipp==3.8.1
