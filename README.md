@@ -86,3 +86,4 @@ Link to Frontend Repo: https://github.com/mkhan42/frontend-rezkeeper
 - Figure out auth on backend (filter user visits)
 - Use yelps API and get reviews and info about restaurants
 - Use google map API and place it in detail card
+- Make it even more mobile friendly and use some media queries
