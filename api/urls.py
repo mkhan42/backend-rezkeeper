@@ -19,7 +19,7 @@ urlpatterns = [
     path('register/', views.RegisterView.as_view(), name='auth_register'),
     path('test/', views.testEndPoint, name='test'),
     path('', views.getRoutes),
-    path('upcomings/<int:user_id>/', views.UpcomingViewSet.as_view({'get':'upcomings'})),
+    # path('upcomings/<int:user_id>/', views.UpcomingViewSet.as_view({'get':'upcomings'})),
     path('upcomings/<int:pk>/orders/', views.UpcomingViewSet.as_view({'get':'orders', 'post':'orders'})),
     path('upcomings/<int:pk>/orders/<int:order>/', views.UpcomingViewSet.as_view({'delete':'remove_order'})),
     path('upcomings/<int:pk>/ratings/', views.UpcomingViewSet.as_view({'get':'ratings', 'post':'ratings'})),
