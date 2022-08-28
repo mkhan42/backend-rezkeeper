@@ -177,3 +177,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Configure Django App for Heroku.
 import django_on_heroku
 django_on_heroku.settings(locals())
+
+import dj_database_url
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+DATABASES = {
+    "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
+}
