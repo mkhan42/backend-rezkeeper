@@ -1,6 +1,5 @@
 from pathlib import Path
 from datetime import timedelta
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -10,22 +9,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-*c@ad7*@3)@f!06y)x&!)$y()&7zun*-ix$(r3x58q7cy3*&^z'
+SECRET_KEY = 'django-insecure-*c@ad7*@3)@f!06y)x&!)$y()&7zun*-ix$(r3x58q7cy3*&^z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-
-SECRET_KEY = os.environ.get('SECRET_KEY', default='django-insecure-*c@ad7*@3)@f!06y)x&!)$y()&7zun*-ix$(r3x58q7cy3*&^z')
-
-
-# DEBUG = True
+DEBUG = True
 
 ALLOWED_HOSTS = []
-
-DEBUG = 'RENDER' not in os.environ
-
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME') 
-if RENDER_EXTERNAL_HOSTNAME:    
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
