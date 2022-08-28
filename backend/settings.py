@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-*c@ad7*@3)@f!06y)x&!)$y()&7zun*-ix$(r3x58q7cy3*&^z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://backend-rezkeeper-96d8ptyrg-mkhan42.vercel.app/']
 
 
 # Application definition
