@@ -68,14 +68,14 @@ class UpcomingViewSet(viewsets.ModelViewSet):
     #     # serializer_class = UpcomingSerializer
     #     return Upcoming.objects.filter(user=user)
 
-    def get(self, request):
-        user = request.user
-        # serializer_class = UpcomingSerializer
-        upcomings = user.upcoming_set.all()
-        # return Upcoming.objects.filter(user=user)
-        serializers = UpcomingSerializer(upcomings, many=True)
+    # def get(self, request):
+    #     user = request.user
+    #     # serializer_class = UpcomingSerializer
+    #     upcomings = user.upcoming_set.all()
+    #     # return Upcoming.objects.filter(user=user)
+    #     serializers = UpcomingSerializer(upcomings, many=True)
 
-        return Response(serializers.data)
+    #     return Response(serializers.data)
 
         
 
